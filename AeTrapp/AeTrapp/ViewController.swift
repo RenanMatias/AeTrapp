@@ -6,8 +6,6 @@
 //  Copyright © 2017 Renan Matias. All rights reserved
 //
 
-// Teste
-
 import UIKit
 
 class ViewController: UIViewController {
