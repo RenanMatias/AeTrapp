@@ -5,16 +5,20 @@
 //  Created by Renan Matias on 01/07/17.
 //  Copyright © 2017 Renan Matias. All rights reserved
 //
-//  Google Maps SDK for iOS
-//  API KEY - AIzaSyCsmWQENHuNsDhwL7miskJHM0S0GSZGIQ0
 
 import UIKit
+import GoogleMaps
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let camera = GMSCameraPosition.camera(withLatitude: -22.962954, longitude: -43.207652, zoom: 6.0)
+        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView.isMyLocationEnabled = true
+        view = mapView
+        
     }
 
     override func didReceiveMemoryWarning() {
