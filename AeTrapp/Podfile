@@ -7,5 +7,7 @@ target 'AeTrapp' do
 
   # Pods for AeTrapp
     pod 'ObjectMapper', '~> 2.2'
+    pod 'GoogleMaps'
+    pod 'GooglePlaces'
 
 end
