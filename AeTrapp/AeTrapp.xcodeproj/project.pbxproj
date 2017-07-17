@@ -149,6 +149,7 @@
 				B5C234071F08952700EF7F49 /* Resources */,
 				46385FE919B01DB3FB3BEBAE /* [CP] Embed Pods Frameworks */,
 				E15BC96C7558E50B5EBD9B82 /* [CP] Copy Pods Resources */,
+				B52CC44D1F1C672E0068A1E1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -222,6 +223,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AeTrapp/Pods-AeTrapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B52CC44D1F1C672E0068A1E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ff3283a96f78aab7dae481fb96abdf59f900e2c6 f9cfee22b0908df5e5a3a8b86273933b594050c200548213b11047dfbc97eadc";
 		};
 		C92FA2CF29001646C21D8BBE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
