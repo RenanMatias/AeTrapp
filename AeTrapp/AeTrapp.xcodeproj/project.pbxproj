@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F97591402A6852999CFD59D /* Pods_AeTrapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FDF1E52F66D5E396751EEC /* Pods_AeTrapp.framework */; };
+		B52CC44F1F1C6ED50068A1E1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52CC44E1F1C6ED50068A1E1 /* UIViewController+Extensions.swift */; };
 		B5C2340D1F08952700EF7F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2340C1F08952700EF7F49 /* AppDelegate.swift */; };
 		B5C2340F1F08952700EF7F49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2340E1F08952700EF7F49 /* ViewController.swift */; };
 		B5C234121F08952700EF7F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C234101F08952700EF7F49 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		01FDF1E52F66D5E396751EEC /* Pods_AeTrapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AeTrapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		714543EB4D5A62FF41AF947E /* Pods-AeTrapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeTrapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AeTrapp/Pods-AeTrapp.release.xcconfig"; sourceTree = "<group>"; };
 		96C11A3C4F9D041C2A435077 /* Pods-AeTrapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeTrapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AeTrapp/Pods-AeTrapp.debug.xcconfig"; sourceTree = "<group>"; };
+		B52CC44E1F1C6ED50068A1E1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B5C234091F08952700EF7F49 /* AeTrapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeTrapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C2340C1F08952700EF7F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C2340E1F08952700EF7F49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		B5C234201F089DA900EF7F49 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B52CC44E1F1C6ED50068A1E1 /* UIViewController+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C2340F1F08952700EF7F49 /* ViewController.swift in Sources */,
+				B52CC44F1F1C6ED50068A1E1 /* UIViewController+Extensions.swift in Sources */,
 				B5C2340D1F08952700EF7F49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
