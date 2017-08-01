@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    override init() {
+        GMSServices.provideAPIKey("AIzaSyCsmWQENHuNsDhwL7miskJHM0S0GSZGIQ0")
+        GMSPlacesClient.provideAPIKey("AIzaSyCsmWQENHuNsDhwL7miskJHM0S0GSZGIQ0")
+        Fabric.with([Crashlytics.self])
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
