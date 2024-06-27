@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F97591402A6852999CFD59D /* Pods_AeTrapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FDF1E52F66D5E396751EEC /* Pods_AeTrapp.framework */; };
+		B52CC44F1F1C6ED50068A1E1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52CC44E1F1C6ED50068A1E1 /* UIViewController+Extensions.swift */; };
 		B5C2340D1F08952700EF7F49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2340C1F08952700EF7F49 /* AppDelegate.swift */; };
 		B5C2340F1F08952700EF7F49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2340E1F08952700EF7F49 /* ViewController.swift */; };
 		B5C234121F08952700EF7F49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C234101F08952700EF7F49 /* Main.storyboard */; };
@@ -15,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01FDF1E52F66D5E396751EEC /* Pods_AeTrapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AeTrapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		714543EB4D5A62FF41AF947E /* Pods-AeTrapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeTrapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AeTrapp/Pods-AeTrapp.release.xcconfig"; sourceTree = "<group>"; };
+		96C11A3C4F9D041C2A435077 /* Pods-AeTrapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AeTrapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AeTrapp/Pods-AeTrapp.debug.xcconfig"; sourceTree = "<group>"; };
+		B52CC44E1F1C6ED50068A1E1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B5C234091F08952700EF7F49 /* AeTrapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeTrapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C2340C1F08952700EF7F49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C2340E1F08952700EF7F49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F97591402A6852999CFD59D /* Pods_AeTrapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47818A7910AE70E8D439A244 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96C11A3C4F9D041C2A435077 /* Pods-AeTrapp.debug.xcconfig */,
+				714543EB4D5A62FF41AF947E /* Pods-AeTrapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A99EE10C2AC03EB2F9A0417D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01FDF1E52F66D5E396751EEC /* Pods_AeTrapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B5C234001F08952700EF7F49 = {
 			isa = PBXGroup;
 			children = (
 				B5C2340B1F08952700EF7F49 /* AeTrapp */,
 				B5C2340A1F08952700EF7F49 /* Products */,
+				47818A7910AE70E8D439A244 /* Pods */,
+				A99EE10C2AC03EB2F9A0417D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +81,62 @@
 			isa = PBXGroup;
 			children = (
 				B5C2340C1F08952700EF7F49 /* AppDelegate.swift */,
+				B5C234231F089DC700EF7F49 /* Supporting Files */,
+				B5C234221F089DBB00EF7F49 /* Storyboards */,
+				B5C234211F089DB000EF7F49 /* Networking */,
+				B5C234201F089DA900EF7F49 /* Extensions */,
+				B5C2341F1F089DA400EF7F49 /* Model */,
+				B5C2341E1F089D9B00EF7F49 /* Controllers */,
+			);
+			path = AeTrapp;
+			sourceTree = "<group>";
+		};
+		B5C2341E1F089D9B00EF7F49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				B5C2340E1F08952700EF7F49 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B5C2341F1F089DA400EF7F49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B5C234201F089DA900EF7F49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B52CC44E1F1C6ED50068A1E1 /* UIViewController+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B5C234211F089DB000EF7F49 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		B5C234221F089DBB00EF7F49 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				B5C234101F08952700EF7F49 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B5C234231F089DC700EF7F49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				B5C234131F08952700EF7F49 /* Assets.xcassets */,
 				B5C234151F08952700EF7F49 /* LaunchScreen.storyboard */,
 				B5C234181F08952700EF7F49 /* Info.plist */,
 			);
-			path = AeTrapp;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +146,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5C2341B1F08952700EF7F49 /* Build configuration list for PBXNativeTarget "AeTrapp" */;
 			buildPhases = (
+				C92FA2CF29001646C21D8BBE /* [CP] Check Pods Manifest.lock */,
 				B5C234051F08952700EF7F49 /* Sources */,
 				B5C234061F08952700EF7F49 /* Frameworks */,
 				B5C234071F08952700EF7F49 /* Resources */,
+				46385FE919B01DB3FB3BEBAE /* [CP] Embed Pods Frameworks */,
+				E15BC96C7558E50B5EBD9B82 /* [CP] Copy Pods Resources */,
+				B52CC44D1F1C672E0068A1E1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,12 +211,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46385FE919B01DB3FB3BEBAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AeTrapp/Pods-AeTrapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B52CC44D1F1C672E0068A1E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ff3283a96f78aab7dae481fb96abdf59f900e2c6 f9cfee22b0908df5e5a3a8b86273933b594050c200548213b11047dfbc97eadc";
+		};
+		C92FA2CF29001646C21D8BBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E15BC96C7558E50B5EBD9B82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AeTrapp/Pods-AeTrapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5C234051F08952700EF7F49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5C2340F1F08952700EF7F49 /* ViewController.swift in Sources */,
+				B52CC44F1F1C6ED50068A1E1 /* UIViewController+Extensions.swift in Sources */,
 				B5C2340D1F08952700EF7F49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +400,7 @@
 		};
 		B5C2341C1F08952700EF7F49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C11A3C4F9D041C2A435077 /* Pods-AeTrapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 672A5ZY4XW;
@@ -272,6 +414,7 @@
 		};
 		B5C2341D1F08952700EF7F49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714543EB4D5A62FF41AF947E /* Pods-AeTrapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 672A5ZY4XW;
@@ -302,6 +445,7 @@
 				B5C2341D1F08952700EF7F49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
